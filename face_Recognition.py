@@ -90,8 +90,9 @@ r = model.fit_generator(
 plt.plot(r.history['loss'], label='train loss')
 plt.plot(r.history['val_loss'], label='val loss')
 plt.legend()
+plt.savefig('LossVal_loss.png')
 plt.show()
-plt.savefig('LossVal_loss')
+
 
 # accuracies
 plt.plot(r.history['acc'], label='train acc')
